@@ -10,10 +10,10 @@ export default function Social() {
                     <a className={`${style["social-button"]} ${style.twitter}`} title="Twitter: fayyadh_75" role="button" onClick={() => window.open("https://twitter.com/fayyadh_75")}>
                         <i className="fab fa-twitter"></i>
                     </a>
-                    <a className={`${style["social-button"]} ${style.instagram}`} title="Instagram: fayyadh_75" role="button" onClick={() => window.open("https://twitter.com/fayyadh_75")}>
+                    <a className={`${style["social-button"]} ${style.instagram}`} title="Instagram: fayyadh_75" role="button" onClick={() => window.open("https://www.instagram.com/fayyadh_75/")}>
                         <i className="fab fa-instagram"></i>
                     </a>
-                    <a className={`${style["social-button"]} ${style.github}`} title="Github: Abdurrahman075" role="button" onClick={() => window.open("https://twitter.com/fayyadh_75")}>
+                    <a className={`${style["social-button"]} ${style.github}`} title="Github: Abdurrahman075" role="button" onClick={() => window.open("https://github.com/Abdurrahman075")}>
                         <i className="fab fa-github"></i>
                     </a>
                 </div>
