@@ -1,0 +1,263 @@
+.navbar {
+  display: flex;
+  color: var(--white);
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: var(--background);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 50;
+  transition: 0.4s;
+}
+
+.navbar-scroll {
+  background-color: var(--background-secondary);
+  filter: drop-shadow(rgba(0, 0, 0, 0.1) 0px 6px 4px);
+}
+
+.nav-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 1024px) {
+  .nav-container {
+    max-width: 1280px;
+  }
+}
+
+.nav-brand {
+  white-space: nowrap;
+  text-decoration: none;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  margin-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.nav-toggler {
+  padding-right: 0 !important;
+  border: 0 !important;
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border-radius: 0.25rem;
+}
+
+@media (min-width: 768px) {
+  .nav-toggler {
+    display: none;
+  }
+}
+
+.nav-bar {
+  height: 3px;
+  border-radius: 10px;
+  background-color: var(--white);
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.nav-bar:nth-child(1) {
+  width: 35px;
+}
+
+.nav-bar:nth-child(2) {
+  width: 20px;
+  margin-left: 15px;
+}
+
+.nav-bar:nth-child(3) {
+  width: 25px;
+  margin-left: 10px;
+}
+
+.show > .nav-bar:nth-child(1) {
+  -webkit-transform: rotate(-45deg) translate(-1px, 13px);
+  transform: rotate(-45deg) translate(-1px, 13px);
+}
+
+.show > .nav-bar:nth-child(2) {
+  opacity: 0;
+}
+
+.show > .nav-bar:nth-child(3) {
+  -webkit-transform: rotate(45deg) translate(-6px, -6px);
+  transform: rotate(45deg) translate(-6px, -6px);
+  width: 35px;
+}
+
+.nav-menu {
+  flex-basis: 100%;
+  flex-grow: 1;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .nav-menu {
+    display: flex !important;
+    flex-basis: auto;
+  }
+}
+
+.nav-menu:not(.show) {
+  display: none;
+}
+
+.nav-links {
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+@media (min-width: 768px) {
+  .nav-links {
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+.nav-item {
+  color: var(--white);
+  padding-right: 0;
+  padding-left: 0;
+  display: block;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-decoration: none;
+  transition: 0.4s;
+  font-weight: bold;
+}
+
+.nav-item:hover {
+  color: rgb(0, 153, 255);
+}
+
+.nav-item[data-active="true"] {
+  color: rgb(0, 153, 255);
+}
+
+@media (min-width: 768px) {
+  .nav-item {
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+  }
+}
+
+.mx-auto {
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+.main-content {
+  padding-top: 6rem;
+}
+
+.home-container {
+  text-align: center;
+  align-items: center;
+  margin-top: 6rem;
+  margin-bottom: 9rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.rounded-full {
+  border-radius: 50% !important;
+}
+
+.social-button {
+  padding: 1rem;
+  transition: 0.3s;
+}
+
+.twitter:hover {
+  color: #1da1f3;
+}
+
+.instagram:hover {
+  color: #ab2db4;
+}
+
+.github:hover {
+  color: #27282c;
+}
+
+.font-mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    Liberation Mono, Courier New, monospace;
+  font-weight: inherit;
+}
+
+.my-0 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.text-md {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-lg {
+  line-height: 1.75rem;
+  font-size: 1.125rem;
+}
+
+.text-xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.loading {
+  width: 18px;
+  height: 18px;
+  box-sizing: border-box;
+
+  border: solid 2px transparent;
+  border-top-color: #29d;
+  border-left-color: #29d;
+  border-radius: 50%;
+
+  -webkit-animation: loading 400ms linear infinite;
+  animation: loading 400ms linear infinite;
+}
+
+@-webkit-keyframes loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
